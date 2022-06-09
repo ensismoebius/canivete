@@ -11,7 +11,8 @@
         android:layout_weight="1"
         android:ems="10"
         android:inputType="text"
-        android:text="Name" />
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,21 +25,24 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="1" />
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2" />
+            android:text="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="3" />
+            android:text="3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
     <LinearLayout
@@ -52,21 +56,24 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="4" />
+            android:text="4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btn5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="5" />
+            android:text="5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btn6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="6" />
+            android:text="6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
     <LinearLayout
@@ -80,21 +87,24 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="7" />
+            android:text="7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btn8"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="8" />
+            android:text="8"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btn9"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="9" />
+            android:text="9"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
     <LinearLayout
@@ -108,21 +118,24 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="0" />
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btnIgual"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="=" />
+            android:text="="
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btnCe"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="CE" />
+            android:text="CE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
     <LinearLayout
@@ -136,21 +149,24 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="+" />
+            android:text="+"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btnSubtracao"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-" />
+            android:text="-"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btnMultiplicacao"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="*" />
+            android:text="*"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
     <LinearLayout
@@ -164,7 +180,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="/" />
+            android:text="/"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
             android:id="@+id/btnAbreParenteses"
@@ -178,7 +195,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=")" />
+            android:text=")"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
 </LinearLayout>
