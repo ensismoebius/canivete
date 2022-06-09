@@ -4,14 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
+    <TextView
         android:id="@+id/txtFormula"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <LinearLayout
