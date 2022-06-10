@@ -41,7 +41,7 @@ class EvaluateString {
 
                 // There may be more than one digits in number
                 val buffer = StringBuffer()
-                while (i < tokens.size && (isPartOfANumber(tokens[i]) || isPartOfAVariable(tokens[i]))) {
+                while (i < tokens.size && (isPartOfANumber(tokens[i]))) {
                     buffer.append(tokens[i++])
                 }
 
@@ -96,10 +96,6 @@ class EvaluateString {
         return values.pop()
     }
 
-    private fun isPartOfAVariable(c: Char): Boolean {
-        return Character.isAlphabetic(c.code)
-    }
-
     /**
      * Verify if a char may be a part of a number
      *
@@ -125,15 +121,6 @@ class EvaluateString {
         if (op2 == '=') return false
         if (op2 == '(' || op2 == ')') return false
         return !((op1 == '*' || op1 == '/') && (op2 == '+' || op2 == '-'))
-    }
-
-    private fun isNumber(value: String?): Boolean {
-        try {
-            value!!.toDouble()
-            return true
-        } catch (e: Exception) {
-        }
-        return false
     }
 
     /**
