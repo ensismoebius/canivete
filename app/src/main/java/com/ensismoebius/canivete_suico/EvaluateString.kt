@@ -146,30 +146,17 @@ class EvaluateString {
      * @return
      */
     private fun applyOperation(operation: Char, valueTwo: String, valueOne: String): String {
-        var firstNumber = 0.0
-        var secondNumber = 0.0
-        
-        if (operation != '=') {
-            if (isNumber(valueOne)) {
-                firstNumber = valueOne.toDouble()
-            }
-        }
-        if (isNumber(valueTwo)) {
-            secondNumber = valueTwo.toDouble()
-        }
-
         var result = 0.0
+        val firstNumber = valueOne.toDouble()
+        val secondNumber = valueTwo.toDouble()
+
         when (operation) {
             '+' -> result = firstNumber + secondNumber
             '-' -> result = firstNumber - secondNumber
             '*' -> result = firstNumber * secondNumber
-            '=' -> {
-                result = 0.0
-            }
+            '=' -> result = 0.0
             '/' -> {
-                if (secondNumber == 0.0) {
-                    throw UnsupportedOperationException("Cannot divide by zero")
-                }
+                if (secondNumber == 0.0) throw UnsupportedOperationException("Cannot divide by zero")
                 result = firstNumber / secondNumber
             }
         }
