@@ -10,7 +10,7 @@ class EvaluateString {
      * @param expression
      * @return
      */
-    fun evaluate(expression: String): String? {
+    fun evaluate(expression: String): String {
 
         // Ignores empty expressions
         if (expression.trim().isEmpty()) {
@@ -26,7 +26,7 @@ class EvaluateString {
         // Stack for Operators: 'ops'
         val ops: Stack<Char> = Stack<Char>()
 
-        // Cicles over all tokens in expression
+        // Cycles over all tokens in expression
         var i = -1
 
         while (++i < tokens.size) {
@@ -40,13 +40,13 @@ class EvaluateString {
             if (tokens[i] in '0'..'9' || Character.isAlphabetic(tokens[i].code)) {
 
                 // There may be more than one digits in number
-                val sbuf = StringBuffer()
+                val buffer = StringBuffer()
                 while (i < tokens.size && (isPartOfANumber(tokens[i]) || isPartOfAVariable(tokens[i]))) {
-                    sbuf.append(tokens[i++])
+                    buffer.append(tokens[i++])
                 }
 
                 // After number has been built push it into the numbers stack
-                values.push(sbuf.toString())
+                values.push(buffer.toString())
 
                 // We must subtract 1 at the index because the next
                 // interaction will add 1, doing this we can keep track
@@ -60,17 +60,15 @@ class EvaluateString {
             // Current token is an opening brace, push it to 'ops'
             if (tokens[i] == '(') {
                 ops.push(tokens[i])
-                i++
                 continue
             }
 
             // Closing brace encountered, solve entire brace
             if (tokens[i] == ')') {
-                while (ops.peek() !== '(') {
+                while (ops.peek() != '(') {
                     values.push(applyOperation(ops.pop(), values.pop(), values.pop()))
                 }
                 ops.pop()
-                i++
                 continue
             }
 
@@ -143,25 +141,21 @@ class EvaluateString {
      * the result
      *
      * @param operation
-     * @param secondNumber
-     * @param firstNumber
+     * @param valueTwo
+     * @param valueOne
      * @return
      */
-    private fun applyOperation(operation: Char, valueTwo: String, valueOne: String): String? {
-        var valueTwo: String? = valueTwo
-        val isValueOneNumeric = isNumber(valueOne)
-        val isValueTwoNumeric = isNumber(valueTwo)
+    private fun applyOperation(operation: Char, valueTwo: String, valueOne: String): String {
         var firstNumber = 0.0
         var secondNumber = 0.0
+        
         if (operation != '=') {
-            if (isValueOneNumeric) {
+            if (isNumber(valueOne)) {
                 firstNumber = valueOne.toDouble()
             }
         }
-        if (isValueTwoNumeric) {
-            if (valueTwo != null) {
-                secondNumber = valueTwo.toDouble()
-            }
+        if (isNumber(valueTwo)) {
+            secondNumber = valueTwo.toDouble()
         }
 
         var result = 0.0

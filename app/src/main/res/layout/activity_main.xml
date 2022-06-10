@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress XmlUnusedNamespaceDeclaration -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ferramentas"
+        android:text="@string/ferramentas"
         android:textAlignment="center"
         android:textSize="34sp" />
 
@@ -19,12 +20,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Abrir calculadora" />
+        android:text="@string/abrir_calculadora"
+        tools:ignore="InefficientWeight" />
 
     <Button
         android:id="@+id/btnDado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Abrir Dado" />
+        android:text="@string/abrir_dado" />
 
 </LinearLayout>
