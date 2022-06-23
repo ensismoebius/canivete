@@ -15,18 +15,29 @@
         android:textAlignment="center"
         android:textSize="34sp" />
 
-    <Button
-        android:id="@+id/btnCalculadora"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/abrir_calculadora"
-        tools:ignore="InefficientWeight" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnDado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/abrir_dado" />
+        <ImageButton
+            android:id="@+id/btnDado"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:contentDescription="@string/_9"
+            android:src="@drawable/ic_dado" />
+
+        <ImageButton
+            android:id="@+id/btnCalculadora"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:contentDescription="@string/abrir_dado"
+            android:src="@drawable/ic_calculadora" />
+    </LinearLayout>
 
 </LinearLayout>

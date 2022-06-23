@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_gravity="center_vertical">
+
+    <!-- The "tools" namespace acts like a placeholder for images or data to be loaded from some source -->
+    <!-- The "xmlns:app="http://schemas.android.com/apk/res-auto"" adds vector images support for older devices -->
+    <!-- Do not forget to alter the app gradle file and add "vectorDrawables.useSupportLibrary = true" -->
+    <!-- The "app:srcCompat" ensures that older devices will display vector images as expected -->
+    <ImageView
+        android:id="@+id/imgEmptyImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/empty_dice"
+        android:contentDescription="@string/emptyImage" />
+
+    <TextView
+        android:id="@+id/txtMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/helloMessage"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnRollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clickToRoll"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

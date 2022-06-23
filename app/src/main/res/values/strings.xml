@@ -19,6 +19,12 @@
     <string name="open">(</string>
     <string name="close">)</string>
     <string name="ferramentas">Ferramentas</string>
-    <string name="abrir_calculadora">Abrir calculadora</string>
-    <string name="abrir_dado">Abrir Dado</string>
+    <string name="abrir_calculadora">Calculadora</string>
+    <string name="abrir_dado">Dado</string>
+    <string name="helloMessage">Roll the dice!</string>
+    <string name="letsRoll">Lets roll!</string>
+    <string name="rolled">Rolled!</string>
+    <string name="diceRolled">The dice has been rolled!</string>
+    <string name="emptyImage">An empty image</string>
+    <string name="clickToRoll">Click to roll</string>
 </resources>

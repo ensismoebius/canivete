@@ -25,6 +25,10 @@
         <activity
             android:name=".Calculadora"
             android:exported="true" />
+
+        <activity
+            android:name=".RolaDado"
+            android:exported="true" />
     </application>
 
 </manifest>
