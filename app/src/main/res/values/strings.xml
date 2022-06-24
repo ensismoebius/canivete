@@ -21,12 +21,10 @@
     <string name="ferramentas">Ferramentas</string>
     <string name="abrir_calculadora">Calculadora</string>
     <string name="abrir_dado">Dado</string>
-    <string name="helloMessage">Roll the dice!</string>
-    <string name="letsRoll">Lets roll!</string>
-    <string name="rolled">Rolled!</string>
-    <string name="diceRolled">The dice has been rolled!</string>
-    <string name="emptyImage">An empty image</string>
-    <string name="clickToRoll">Click to roll</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="helloMessage">Rolar o dado</string>
+    <string name="letsRoll">Rodar!</string>
+    <string name="rolled">Dado rolado</string>
+    <string name="diceRolled">A sorte foi lançada</string>
+    <string name="emptyImage">Uma imagem vazia</string>
+    <string name="clickToRoll">Clique para rolar</string>
 </resources>
