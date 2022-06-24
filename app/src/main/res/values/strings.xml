@@ -27,4 +27,6 @@
     <string name="diceRolled">The dice has been rolled!</string>
     <string name="emptyImage">An empty image</string>
     <string name="clickToRoll">Click to roll</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
