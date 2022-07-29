@@ -1,6 +1,5 @@
 package com.ensismoebius.canivete_suico
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -12,7 +11,6 @@ class Calculadora : AppCompatActivity() {
     private val avaliador: EvaluateString = EvaluateString()
     private val txtformula: TextView by lazy { findViewById(R.id.txtFormula) }
 
-    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.calculadora)
