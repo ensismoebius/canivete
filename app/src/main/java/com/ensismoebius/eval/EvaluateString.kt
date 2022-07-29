@@ -115,7 +115,7 @@ class EvaluateString {
      *
      * @param op1
      * @param op2
-     * @return
+     * @return true if op1 has precedence over op2, false otherwise
      */
     private fun hasPrecedence(op1: Char, op2: Char): Boolean {
         if (op2 == '=') return false
