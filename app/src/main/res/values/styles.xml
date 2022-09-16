@@ -8,4 +8,12 @@
         <item name="android:layout_weight">1</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
     </style>
+
+    <style name="sdsd">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
+    </style>
 </resources>
