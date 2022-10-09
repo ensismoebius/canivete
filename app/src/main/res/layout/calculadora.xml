@@ -7,7 +7,8 @@
 
     <TextView
         android:id="@+id/txtFormula"
-        style="@style/sdsd" />
+        style="@style/caixaDeTextoDaCalculadora"
+        android:layout_weight="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
